@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button</title>
+</head>
+  <button id="send">Send Message</button>
+  <script type="text/javascript" src="lib/osc.browser.min.js"></script>
+  <script type="text/javascript">
+    var osc = new OSC();
+    osc.open(); // connect by default to ws://localhost:8080
+
+    document.getElementById('send').addEventListener('click', () => {
+      var message = new OSC.Message('/test/random', Math.random());
+      osc.send(message);
+    });
+  </script>
+  <link rel="stylesheet" href="Style.css">
+<body>
+<div id="waveform"></div>
+<div id='buttoncontainer'>
+</div>
+</body>
+</html>
+

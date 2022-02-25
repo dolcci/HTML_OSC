@@ -1,0 +1,99 @@
+:root
+{
+    --card-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+#buttoncontainer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 400px;
+}
+
+#stop
+{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    width: 160px; !important;
+}
+#send
+{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    width: 160px; !important;
+}
+#stop:hover
+{
+    background-color: rgba(178, 34, 34, 0.6);
+    color: white;
+}
+
+.button
+{
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    box-shadow: var(--card-shadow);
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #ECEFF1;
+    transition: .2s ease all;
+    font-weight: lighter;
+    color: #455A64;
+}
+.textbox
+{
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    box-shadow: var(--card-shadow);
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    background-color: #ECEFF1;
+    
+    font-weight: lighter;
+    color: #455A64;
+}
+.button:hover
+{
+    background-color: rgba(248, 248, 255, .6);
+}
+
+.buttonSelected
+{
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    box-shadow: var(--card-shadow);
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(178, 34, 34, 0.6);
+    transition: .2s ease all;
+    font-weight: lighter;
+    color: #455A64;
+}
+
+#waveform
+{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width: 800px;
+}
